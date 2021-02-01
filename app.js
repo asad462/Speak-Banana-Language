@@ -1,4 +1,3 @@
-
 var btnTransalate = document.querySelector("#btn-transalate");  
 var txtInput = document.querySelector("#txt-input");
 var outputDiv = document.querySelector("#output");
@@ -18,12 +17,12 @@ function clickEventHandler() {
     var inputText = txtInput.value;
 
     fetch(constructURL(inputText))
-    .then(response => response.json)  
-    .then(JSON => { 
-        var translatedText = JSON.contents.translated;
+      .then(response => response.json)  
+      .then( json => { 
+        var translatedText = json.contents.translated;
         outputDiv.innerText = translatedText;
       })
-    .catch(errorHandler)   
+      .catch(errorHandler)   
 }
 
 
