@@ -1,5 +1,5 @@
-//These APIs are used in every browser, it is a way to interact with the browser.
-var btnTransalate = document.querySelector("#btn-transalate");  //DOM Scripting. "#" is used as id selector. querySelector searches the HTML document and finds the element with the relevant id.
+
+var btnTransalate = document.querySelector("#btn-transalate");  
 
 var txtInput = document.querySelector("#txt-input");
 console.log(txtInput)
@@ -27,11 +27,11 @@ function clickEventHandler() {
         var translatedText = json.contents.translated;
         outputDiv.innerText = translatedText;
       })
-    .catch(errorHandler)   //No need to pass argument to this callback function. 
+    .catch(errorHandler)   
 }
 
 
-btnTransalate.addEventListener("click", clickEventHandler) // 'click' event is added and when it is encountered, the function gets executed. It is a callback function.
+btnTransalate.addEventListener("click", clickEventHandler) 
 
 
 
