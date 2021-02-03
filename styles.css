@@ -25,7 +25,6 @@ textarea{
     display: block;
     margin-top: 2rem;
     margin: 1rem;
-    padding: 1rem;
     font-size: large;
     font-family: inherit;
 
@@ -59,7 +58,7 @@ footer{
 }
 
 footer p{
-    text-align: center;
+    max-width: var(--width-limit);
     margin: auto;
 }
 
