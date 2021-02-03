@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+
+:root{
+    --primary-color: #F2C94C;
+    --width-limit: 600px;
+}
+
+nav{
+    background-color: #F2C94C;
+    text-align: center;
+}
+
+main{
+    margin: auto;
+    min-width: var(--width-limit);
+    padding: 1rem;
+}
+
+textarea{
+    box-sizing: border-box;
+    width: 100%;
+    height: 20vh;
+    display: block;
+    margin-top: 2rem;
+    padding: 1rem;
+    font-size: large;
+    font-family: inherit;
+
+}
+
+button{
+    background-color: var(--primary-color);
+    border: 1rem;
+    margin: 1rem;
+    font-family: cursive;
+    font-size: large;
+}
+
+
+
+#output{
+    border: 1px solid black;
+    height: 10vh;
+    width: 80%;
+    margin: 1rem;
+    padding: 1rem;
+}
+
